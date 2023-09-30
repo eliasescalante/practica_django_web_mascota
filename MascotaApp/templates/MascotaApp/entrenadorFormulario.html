@@ -1,0 +1,27 @@
+{% extends "MascotaApp/padre.html"%}
+{% load static %}
+
+{% block section1 %}
+
+<body>
+    <br>
+    <center>
+        <h2 style = 'color: #8d69f0;'>Agregar Entrenador a la base de datos</h2>
+    </center>
+    <br>
+    <center>
+        <form action="" method="POST">{% csrf_token %}
+            <table>
+                {{ miFormulario.as_table }}
+            </table>
+            <br>
+            <input type="submit", value="Enviar">
+        </form>
+    </center>
+    
+    <br>
+    <br>
+    <br>
+</body>
+
+{% endblock %}
