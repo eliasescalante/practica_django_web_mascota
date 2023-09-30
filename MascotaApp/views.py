@@ -64,7 +64,7 @@ def buscar(request):
          nombre = request.GET['nombre']
          mascotas = Mascota.objects.filter(nombre__icontains=nombre)
 
-         return render(request, r"MascotaApp\resultadosBusqueda.html",{"mascotas":mascotas,"nombre":nombre})
+         return render(request, r"MascotaApp\resultadosBusqueda.html",{"nombre":nombre,"mascotas":mascotas})
     else:
         respuesta = "no enviaste datos"
     

@@ -9,15 +9,16 @@
 <br>
 <br>
 <center>
-    <p>Estamos buscando el peludito: {{nombre}}</p>>
+    <p>Buscando a {{nombre}}</p>>
 
-{% if mascota%}
+{% if mascotas %}
 
 <ul>
     {% for mascota in mascotas%}
         <li>{{mascota.nombre}}</li>
-        <li>{{mascota.tamaño}}</li>
         <li>{{mascota.raza}}</li>
+        <li>{{mascota.tamaño}}</li>
+        <br>
     {% endfor %}
 
 </ul>
