@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from MascotaApp import views
 from MascotaApp.forms import *
 from MascotaApp.models import *
@@ -53,3 +54,19 @@ def entrenamientoFormulario(request):
 
     return render(request, "MascotaApp\entrenamientoFormulario.html", {"miFormulario":miFormulario})
     
+def busquedaMascota(request):
+    return render (request, r"MascotaApp\busquedaMascota.html")
+
+def buscar(request):
+    # return HttpResponse(respuesta)
+    if request.GET["nombre"]:
+         # respuesta = f"Estoy buscando la camada nro : {request.GET['camada']}"
+         nombre = request.GET['nombre']
+         mascotas = Mascota.objects.filter(nombre__icontains=nombre)
+
+         return render(request, r"MascotaApp\resultadosBusqueda.html",{"mascotas":mascotas,"nombre":nombre})
+    else:
+        respuesta = "no enviaste datos"
+    
+    return HttpResponse(respuesta)
+

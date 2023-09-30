@@ -1,0 +1,22 @@
+{% extends "MascotaApp/padre.html"%}
+{% load static %}
+
+{% block section1 %}
+<center>
+    <br>
+    <h2 style = 'color: #8d69f0;'>Buscar tu mascota...</h2>
+    <body>
+        <br>
+        <br>
+        <br>
+        <form action="/MascotaApp/buscar" method="GET">
+            <input type="" name="nombre" id="">
+            <input type="submit" value="Buscar">
+        </form>
+        <br>
+        <br>
+        <br>
+    </body>
+</center>
+
+{% endblock %}

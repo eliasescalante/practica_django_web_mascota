@@ -1,0 +1,27 @@
+{% extends "MascotaApp/padre.html"%}
+{% load static %}
+
+{% block section1 %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+    <p>Estamos buscando el peludito: {{nombre}}</p>>
+
+{% if mascota%}
+
+<ul>
+    {% for mascota in mascotas%}
+        <li>{{mascota.nombre}}</li>
+        <li>{{mascota.tamaño}}</li>
+        <li>{{mascota.raza}}</li>
+    {% endfor %}
+
+</ul>
+</center>
+
+{%endif%}
+{% endblock %}
