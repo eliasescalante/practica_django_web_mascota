@@ -7,7 +7,7 @@ from MascotaApp.models import *
 
 def inicio(request):
     #pagina de inicio
-    return render(request,"MascotaApp\index.html")
+    return render(request,r"MascotaApp\index.html")
 
 def mascotaFormulario(request):
     # return render(request,"MascotaApp\mascotaFormulario.html")
@@ -18,11 +18,11 @@ def mascotaFormulario(request):
             informacion = miFormulario.cleaned_data
             mascota = Mascota(nombre=informacion['nombre'], tamaño=informacion['tamaño'], raza = informacion['raza'])
             mascota.save()
-            return render(request, "MascotaApp\index.html")
+            return render(request, r"MascotaApp\index.html")
     else:
         miFormulario=MascotaFormulario()
 
-    return render(request, "MascotaApp\mascotaFormulario.html", {"miFormulario":miFormulario})
+    return render(request, r"MascotaApp\mascotaFormulario.html", {"miFormulario":miFormulario})
     
 def entrenadorFormulario(request):
     # return render(request,"MascotaApp\entrenadorFormulario.html")
@@ -33,11 +33,11 @@ def entrenadorFormulario(request):
             informacion = miFormulario.cleaned_data
             entrenador = Entrenador(nombre=informacion['nombre'], edad=informacion['edad'])
             entrenador.save()
-            return render(request, "MascotaApp\index.html")
+            return render(request, r"MascotaApp\index.html")
     else:
         miFormulario=EntrenadorFormulario()
 
-    return render(request, "MascotaApp\entrenadorFormulario.html", {"miFormulario":miFormulario})
+    return render(request, r"MascotaApp\entrenadorFormulario.html", {"miFormulario":miFormulario})
     
 def entrenamientoFormulario(request):
     # return render(request,"MascotaApp\entrenamientoFormulario.html")
@@ -48,11 +48,11 @@ def entrenamientoFormulario(request):
             informacion = miFormulario.cleaned_data
             entrenamiento = Entrenamiento(curso=informacion['curso'])
             entrenamiento.save()
-            return render(request, "MascotaApp\index.html")
+            return render(request, r"MascotaApp\index.html")
     else:
         miFormulario=EntrenamientoFormulario()
 
-    return render(request, "MascotaApp\entrenamientoFormulario.html", {"miFormulario":miFormulario})
+    return render(request, r"MascotaApp\entrenamientoFormulario.html", {"miFormulario":miFormulario})
     
 def busquedaMascota(request):
     return render (request, r"MascotaApp\busquedaMascota.html")
