@@ -21,3 +21,12 @@ nombre: Elias Escalante
 ![captura](https://github.com/eliasescalante/practica_django_web_mascota/blob/master/Capture_3.JPG)
 
 ----
+
+![GitHub repo size](https://img.shields.io/github/repo-size/eliasescalante/practica_django_web_mascota
+)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/eliasescalante/practica_django_web_mascota
+)
+![GitHub last commit](https://img.shields.io/github/last-commit/eliasescalante/practica_django_web_mascota
+)
+
+----
