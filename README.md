@@ -2,7 +2,7 @@
 nombre: Elias Escalante
 
 ----
-##Prototipo con el modelo MVT
+## Prototipo con el modelo MVT
 
 ## Realice una web simple con una seccion para cada modelo. En la cual en cada una de las secciones se puede acceder a un formulario. De esta forma se puede cargar informacion a la base de datos. Tambien agregue un formulario de busqueda para obtener informacion de una mascota en la base de datos
 
