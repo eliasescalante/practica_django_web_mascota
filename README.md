@@ -1,5 +1,5 @@
 # preentrega_3 - Practica con DJANGO
-nombre: Elias Escalante
+## nombre: Elias Escalante
 
 ----
 ## Prototipo con el modelo MVT
